@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Test Your CPS - Cluto</title>
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <link rel="icon" type="image/svg+xml" href="logo.svg">
+		<meta name="description" content="Test your CPS (Clicks Per Second) in 5 second test, 60 second test or just clicking! Enjoy the website free without ads!">
+		<meta name="keywords" content="click speed test, cps, clicking speed, butterfly clicking, drag clicking, Cluto, Cluto click speed test">
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body onresize="resize()">
+		<canvas id="circles"></canvas>
+		<div id="titleBar">
+			<div id="title">TEST YOUR CPS</div>
+		</div>
+		<div id="modeButtons">
+			<div onclick="modeSwitch(0);" id="mb0" class="modeButton buttonBorder">JUST SHOW CPS</div>
+			<div onclick="modeSwitch(1);" id="mb1" class="modeButton">5 SECOND SPEED TEST</div>
+			<div onclick="modeSwitch(2);" id="mb2" class="modeButton">1 MINUTE SPEED TEST</div>
+			<div onclick="modeSwitch(3);" id="mb3" class="modeButton">ABOUT ME</div>
+		</div>
+		<div id="text1">0 cps</div>
+		<div id="text2">0 clicks</div>
+		<div id="text3"></div>
+		<div id="clickCounter"></div>
+
+		<div id="resultBack" class="popupBack" onclick="popup(false, 'result')"></div>
+		<div id="result" class="popup">
+			<div id="resultTitle" class="popupTitle">error CPS</div>
+			<div class="popupAlt">Congrats!</div>
+			<div id="resultClicks" class="popupClicks">error CLICKS</div>
+			<div class="popupClose" onclick="popup(false, 'result')">CLOSE</div>
+		</div>
+
+		<div id="clickProtector"></div>
+		<script src="settings.js"></script>
+		<script src="ui.js"></script>
+		<script src="js.js"></script>
+	</body>
+</html>
