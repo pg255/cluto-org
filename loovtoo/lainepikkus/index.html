@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>lainepikkus</title>
+		<meta charset="utf-8">
+		<style>
+			body {
+				padding: 0px;
+				margin: 0px;
+			}
+			
+			#con {
+				width: 100%;
+				height: 100vh;
+				display: block;
+				float: left;
+				background-color: #000000;
+				
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			
+			#image {
+				background-color: #222222;
+			}
+		</style>
+	</head>
+	<body onresize="c.cssresize()" onclick="do_lainepikkus = !do_lainepikkus; line_0()" oncontextmenu="event.preventDefault(); do_sagedus = !do_sagedus; line_0()">
+		<div id="con" onmousewheel="muuda_lainepikkust(event.deltaY)">
+			<canvas id="image" width="100" height="100"></canvas>
+		</div>
+		<script src="canvedit.js"></script>
+		<script src="image.js"></script>
+	</body>
+</html>
