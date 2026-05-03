@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>polariseeritud vs polariseerimata</title>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+				background-color: #002;
+				overflow: hidden;
+			}
+
+			video {
+				position: absolute;
+				width: 100%;
+				height: 100vh;
+			}
+		</style>
+	</head>
+	<video autoplay loop muted playsinline>
+		<source src="polariseeritud.mp4" type="video/mp4">
+	</video>
+	<video autoplay loop muted playsinline onclick="this.style.opacity ^= 1">
+		<source src="polariseerimata.mp4" type="video/mp4">
+	</video>
+</html>
